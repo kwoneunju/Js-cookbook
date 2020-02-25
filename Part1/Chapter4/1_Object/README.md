@@ -15,8 +15,8 @@
 
 <br>
 
-**[ 함수형 프로그래밍과 객체 지향적 프로그래밍 ]**
-지난 몇 년간, jQuery와 Node.js의 폭발적인 성장 후 전통적인 프로토타입 객체 기반 기술보다 함수형 프로그래밍 개방방식을 사용하는 추세가 증가
+**[ 함수형 프로그래밍과 객체 지향적 프로그래밍 ]**<br>
+jQuery와 Node.js의 폭발적인 성장 후 전통적인 프로토타입 객체 기반 기술보다 함수형 프로그래밍 개방방식을 사용하는 추세가 증가
 * 함수형 프로그래밍
   * [장점]
     * 원하지 않는 부작용을 일으킬 확률이 낮음
@@ -118,6 +118,7 @@ Tune.prototype.addCategory = function(categoryName) {
       return title + " " + artist;
     }
   }
+  ```
 * prototype 함수에 유일한 데이터는 this를 통해 얻어지는 것뿐
   * [???] 꼼수 가능<br>
     But,<br>
@@ -127,6 +128,7 @@ Tune.prototype.addCategory = function(categoryName) {
   2. prototype 사용하지 말 것<br>
     \> [???] 사용할 경우: this를 통해 데이터에 접근 가능해지며, 한 번 생성된 객체 속성은 변경되지 않을 것임
 
+  ```
   var sad = new Tune('Sad Song', 'Sad Singer');
   var happy = new Tune('Happy'. 'Happy Singer');
   console.log(sad.concatTitleArtist()); // Happy happy Singer
